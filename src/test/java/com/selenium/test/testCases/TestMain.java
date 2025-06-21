@@ -40,8 +40,12 @@ public class TestMain {
 	int expCol;
 	
 	ExtentReportManager erm;
-
 	
+	/**
+	 * setup setDriver class
+	 * launch browser
+	 * @param browser passes browser value for opening different browser, received from testng.xml
+	 */
 	@BeforeTest
 	@Parameters("browser")
 	public void setDriver(String browser) {
@@ -49,6 +53,15 @@ public class TestMain {
 		driver=dset.driverLaunch(browser);
 	}
 	
+	/**
+	 * Set parameters:
+	 * File name to use
+	 * Initialize ErailDataInput class - passes input into web page
+	 * Initialize ErailDdataOutput - fetching various outputs from web page
+	 * Initialize ExcelUtils - get values, set values, apply colors in cell\
+	 * expCol - expected values column for comparison
+	 * validCol - for writing validation report
+	 */
 	@BeforeClass
 	public void setParams() {
 		filename="TrainSearchData.xlsx";
@@ -60,6 +73,9 @@ public class TestMain {
 		validCol=3;
 	}
 	
+	/**
+	 * Initialize Extent Report
+	 */
 	@BeforeTest
 	public void startReporter()
 	   {
@@ -67,13 +83,19 @@ public class TestMain {
 		erm.createTest("Erail Train Search");
 	   }
   
+	/**
+	 * actTitle - stores actual title and write in excel
+	 * expTitle - get expected title from excel
+	 * Validate actual title and expected title
+	 * @throws IOException if fails to read and write from Excel sheet
+	 */
 	@Test 
 	public void testTitle() throws IOException {
-		String actTitle=pageInp.actTitle();
 		row=1;
-		
-		String expTitle=excel.getCellData("Testing", row, expCol);
+		String actTitle=pageInp.actTitle();
 		excel.setCellData("Testing", row, "Actual", actTitle);
+
+		String expTitle=excel.getCellData("Testing", row, expCol);
 		try {
 			Assert.assertEquals(actTitle, expTitle);
 			excel.setCellData("Testing",row,"Validation Result","PASS");
@@ -88,6 +110,12 @@ public class TestMain {
 		}
 	}  
 	
+	/**
+	 * actUrl - stores actual URL and write in excel
+	 * expUrl - get expected URL from excel
+	 * Validate actual URL and expected URL
+	 * @throws IOException if fails to read and write from Excel sheet
+	 */
 	@Test 
 	public void testURL() throws IOException {
 		row=2;
@@ -109,12 +137,22 @@ public class TestMain {
 		}
 	}
 	
+	/**
+	 * Accepts alert if appears
+	 */
 	@Test(priority=0)
 	public void alertHandle() {
 		pageInp.acceptAlert();
 		erm.logPass("Handled Alert");
 	}
 	
+	/**
+	 * sourceStation() - select source station, data fetched from excel
+	 * actSrc - stores actual source station
+	 * expUrl - get expected URL from excel
+	 * Validate actual source and expected source
+	 * @throws IOException if fails to read and write from Excel sheet
+	 */
 	@Test(priority=1)
 	public void testSrcStation() throws IOException {
 		row=3;
@@ -142,6 +180,13 @@ public class TestMain {
 		}
 	}
 	
+	/**
+	 * destStation() - select destination station, data fetched from excel
+	 * actDest - stores actual source station and write into excel
+	 * expDest - get expected URL from excel
+	 * Validate actual destination and expected destination
+	 * @throws IOException if fails to read and write from Excel sheet
+	 */
 	@Test(priority=2)
 	public void testDestStation() throws IOException {
 		row=4;
@@ -152,8 +197,9 @@ public class TestMain {
 		erm.logPass("Searched Destination Station");
 		
 		String actDest= pageOut.getDest();
-		String expDest=excel.getCellData("Testing", row, expCol);
 		excel.setCellData("Testing", row, "Actual", actDest);
+		
+		String expDest=excel.getCellData("Testing", row, expCol);
 		try {
 			Assert.assertEquals(actDest,expDest);
 			excel.setCellData("Testing",row,"Validation Result","PASS");
@@ -168,6 +214,14 @@ public class TestMain {
 		}
 	}
 	
+	/**
+	 * getDateValues() - fetch number of days and finds journey date
+	 * dateSelection() - select date 
+	 * dateSelectionStatus() - provide status if invalid journey date is mentioned
+	 * actDate - stores actual source station and write into excel
+	 * expDest - get expected source station from excel
+	 * @throws IOException if fails to read and write from Excel sheet
+	 */
 	@Test(priority=3)
 	public void testDateSelection() throws IOException {
 		row=5;
@@ -180,9 +234,10 @@ public class TestMain {
 		
 		pageInp.dateSelectionStatus();
 
-		String expDate=excel.getCellData("Testing", row, expCol);
-		String actDate=pageOut.getDate();  
+		String actDate=pageOut.getDate(); 
 		excel.setCellData("Testing", row, "Actual", actDate);
+		
+		String expDate=excel.getCellData("Testing", row, expCol);
 		try {
 			Assert.assertEquals(expDate,actDate);
 			excel.setCellData("Testing",row,"Validation Result","PASS");
@@ -197,6 +252,11 @@ public class TestMain {
 		}
 	}
 	
+	/**
+	 * reserveQuota() - select reservation quota from excel
+	 * classSelection() - select reservation class from excel
+	 * searchBt() - search trains
+	 */
 	@Test(priority=4)
 	public void selectChoices() {
 		pageInp.reserveQuota();
@@ -214,17 +274,24 @@ public class TestMain {
 		erm.logPass("Searched Trains");
 	}
 	
+	/**
+	 * getAllTrains() - get list of trains from source to destination
+	 * printAvailTrains() - print all list of trains
+	 */
 	@Test(priority=5)
-	public void availableTrain() throws IOException {
+	public void availableTrain(){
 		HashMap<String,String>trains= pageOut.getAllTrains(); 
-		System.out.println("Got Train List...");
+		System.out.println("Got Train List Found "+trains.size()+"...");
 		ScreenShot.screenShotTC(driver, "6_TrainList");
 		erm.logPass("Got Train List");
 
-		
 		pageOut.printAvailTrains();
 	 }
 	
+	/**
+	 * For handling Extent Report
+	 * @param result
+	 */
 	@AfterMethod
 	public void getResult(ITestResult result) {
 		if(result.getStatus() == ITestResult.FAILURE) {
@@ -243,6 +310,9 @@ public class TestMain {
 		}
 	}
 	
+	/**
+	 * Closes WebDriver parameter
+	 */
 	@AfterClass
 	public void closeParams() {
 		if (driver != null) {
@@ -250,6 +320,9 @@ public class TestMain {
 	    }
 	}
 	
+	/**
+	 * Closes ExtentReport parameter
+	 */
 	@AfterTest
 	   public void flushReport() {
 		erm.flushReports();

@@ -17,7 +17,6 @@ public class ErailDataOutput {
 	ExcelUtils excel;
 	String sheet;
 
-	
 	public ErailDataOutput(WebDriver driver, String filename) {
 		trains=new HashMap<String,String>();
 		this.driver=driver;
