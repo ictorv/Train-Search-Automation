@@ -46,7 +46,7 @@ public class ErailDataInput {
 	@FindBy(xpath="//*[@class='autocomplete'][1]/div")
 	List<WebElement>startingStations;
 	
-	//destination stations menu
+	//destination stations menu 
 	@FindBy(id="txtStationTo")
 	WebElement dest;
 	
@@ -96,15 +96,11 @@ public class ErailDataInput {
 	public void sourceStation() {
 		row=1;
 		col=0;
-//		WebElement start=driver.findElement(By.id("txtStationFrom"));
 		start.clear();
 		
 		//sending initial station name to input from excel
 		String src=excel.getCellData(sheet, row, col);
 		start.sendKeys(src);
-		
-		//getting list of source stations from suggestion
-//		List <WebElement> startingStations=driver.findElements(By.xpath("//*[@class='autocomplete'][1]/div"));
 
 		//searching based on desired starting station from excel
 		row=3;
@@ -121,15 +117,11 @@ public class ErailDataInput {
 	public void destStation() {
 		row=1;
 		col=1;
-//		WebElement dest=driver.findElement(By.id("txtStationTo"));
 		dest.clear();
 		
 		//sending initial station name to input from excel
 		String destloc=excel.getCellData(sheet, row, col);
 		dest.sendKeys(destloc);
-		
-		//getting list of destination stations from suggestion
-//		List <WebElement> destStations=driver.findElements(By.xpath("//*[@class='autocomplete'][1]/div"));
 		
 		//searching based on required station
 		row=4;
@@ -157,10 +149,7 @@ public class ErailDataInput {
 		int monthPos;
 		
 		//getting all visible months in list
-		calender.click();
-//		driver.findElement(By.id("tdDateFromTo")).click();
-//		List <WebElement>availMonths=driver.findElements(By.xpath("//*[@id=\"divCalender\"]//td/table/tbody/tr[1]"));
-		
+		calender.click();		
 		datestatus=false;
 		
 		outerloop:
@@ -201,9 +190,7 @@ public class ErailDataInput {
 	public void reserveQuota() {
 		row=1;
 		col=3;
-		//get all quota in list
-//		List<WebElement> quota=driver.findElements(By.xpath("//*[@id='cmbQuota']/option"));
-		
+	
 		//match quota with excel sheet and select
 		String qta=excel.getCellData(sheet, row, col);
 		for(WebElement q:quota) {
@@ -216,8 +203,6 @@ public class ErailDataInput {
 	public void classSelection() {
 		row=1;
 		col=4;
-		//get all class in list
-//		List<WebElement> classes=driver.findElements(By.xpath("//*[@id='selectClassFilter']/option"));
 		
 		//match class with excel sheet and select
 		String reqClass=excel.getCellData(sheet, row, col);
@@ -229,7 +214,6 @@ public class ErailDataInput {
 	}
 	
 	public void searchBt() {
-//		WebElement submit=driver.findElement(By.id("buttonFromTo"));
 		submit.click();
 	}
 }

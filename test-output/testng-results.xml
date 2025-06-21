@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="16" passed="14" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-21T21:52:25 IST" name="Suite" finished-at="2025-06-21T21:52:56 IST" duration-ms="31574">
+  <suite started-at="2025-06-21T22:15:26 IST" name="Suite" finished-at="2025-06-21T22:15:56 IST" duration-ms="30444">
     <groups>
     </groups>
-    <test started-at="2025-06-21T21:52:25 IST" name="TrainSearchEdge" finished-at="2025-06-21T21:52:43 IST" duration-ms="17842">
+    <test started-at="2025-06-21T22:15:26 IST" name="TrainSearchEdge" finished-at="2025-06-21T22:15:42 IST" duration-ms="16174">
       <class name="com.selenium.test.testCases.TestMain">
-        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T21:52:25 IST" name="setDriver" finished-at="2025-06-21T21:52:30 IST" duration-ms="5618" status="PASS">
+        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T22:15:26 IST" name="setDriver" finished-at="2025-06-21T22:15:31 IST" duration-ms="5102" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method is-config="true" signature="startReporter()[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T21:52:30 IST" name="startReporter" finished-at="2025-06-21T21:52:31 IST" duration-ms="244" status="PASS">
+        <test-method is-config="true" signature="startReporter()[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T22:15:31 IST" name="startReporter" finished-at="2025-06-21T22:15:31 IST" duration-ms="278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReporter -->
-        <test-method is-config="true" signature="setParams()[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T21:52:31 IST" name="setParams" finished-at="2025-06-21T21:52:32 IST" duration-ms="1101" status="PASS">
+        <test-method is-config="true" signature="setParams()[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T22:15:31 IST" name="setParams" finished-at="2025-06-21T22:15:33 IST" duration-ms="1085" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setParams -->
-        <test-method signature="alertHandle()[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T21:52:32 IST" name="alertHandle" finished-at="2025-06-21T21:52:32 IST" duration-ms="17" status="PASS">
+        <test-method signature="alertHandle()[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T22:15:33 IST" name="alertHandle" finished-at="2025-06-21T22:15:33 IST" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- alertHandle -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T21:52:32 IST" name="getResult" finished-at="2025-06-21T21:52:32 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T22:15:33 IST" name="getResult" finished-at="2025-06-21T22:15:33 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,11 +41,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="testTitle()[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T21:52:32 IST" name="testTitle" finished-at="2025-06-21T21:52:32 IST" duration-ms="250" status="PASS">
+        <test-method signature="testTitle()[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T22:15:33 IST" name="testTitle" finished-at="2025-06-21T22:15:33 IST" duration-ms="230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTitle -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T21:52:32 IST" name="getResult" finished-at="2025-06-21T21:52:32 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T22:15:33 IST" name="getResult" finished-at="2025-06-21T22:15:33 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,11 +56,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="testURL()[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T21:52:32 IST" name="testURL" finished-at="2025-06-21T21:52:32 IST" duration-ms="149" status="PASS">
+        <test-method signature="testURL()[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T22:15:33 IST" name="testURL" finished-at="2025-06-21T22:15:33 IST" duration-ms="125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testURL -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T21:52:32 IST" name="getResult" finished-at="2025-06-21T21:52:32 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T22:15:33 IST" name="getResult" finished-at="2025-06-21T22:15:33 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -71,11 +71,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="testSrcStation()[pri:1, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T21:52:32 IST" name="testSrcStation" finished-at="2025-06-21T21:52:33 IST" duration-ms="720" status="PASS">
+        <test-method signature="testSrcStation()[pri:1, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T22:15:33 IST" name="testSrcStation" finished-at="2025-06-21T22:15:34 IST" duration-ms="898" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSrcStation -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T21:52:33 IST" name="getResult" finished-at="2025-06-21T21:52:33 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T22:15:34 IST" name="getResult" finished-at="2025-06-21T22:15:34 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -86,11 +86,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="testDestStation()[pri:2, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T21:52:33 IST" name="testDestStation" finished-at="2025-06-21T21:52:34 IST" duration-ms="803" status="PASS">
+        <test-method signature="testDestStation()[pri:2, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T22:15:34 IST" name="testDestStation" finished-at="2025-06-21T22:15:35 IST" duration-ms="932" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDestStation -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T21:52:34 IST" name="getResult" finished-at="2025-06-21T21:52:34 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T22:15:35 IST" name="getResult" finished-at="2025-06-21T22:15:35 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,7 +101,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="testDateSelection()[pri:3, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T21:52:34 IST" name="testDateSelection" finished-at="2025-06-21T21:52:35 IST" duration-ms="1434" status="FAIL">
+        <test-method signature="testDateSelection()[pri:3, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T22:15:35 IST" name="testDateSelection" finished-at="2025-06-21T22:15:37 IST" duration-ms="1891" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [25-Jun-25 Wed] but found [TEXT(TODAY()+4, "dd-mmm-yy ddd")]]]>
@@ -147,7 +147,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDateSelection -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T21:52:35 IST" name="getResult" finished-at="2025-06-21T21:52:35 IST" duration-ms="149" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T22:15:37 IST" name="getResult" finished-at="2025-06-21T22:15:37 IST" duration-ms="289" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -158,11 +158,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="selectChoices()[pri:4, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T21:52:35 IST" name="selectChoices" finished-at="2025-06-21T21:52:37 IST" duration-ms="1469" status="PASS">
+        <test-method signature="selectChoices()[pri:4, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T22:15:37 IST" name="selectChoices" finished-at="2025-06-21T22:15:38 IST" duration-ms="1084" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectChoices -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T21:52:37 IST" name="getResult" finished-at="2025-06-21T21:52:37 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T22:15:38 IST" name="getResult" finished-at="2025-06-21T22:15:38 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -173,11 +173,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="availableTrain()[pri:5, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T21:52:37 IST" name="availableTrain" finished-at="2025-06-21T21:52:37 IST" duration-ms="630" status="PASS">
+        <test-method signature="availableTrain()[pri:5, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T22:15:38 IST" name="availableTrain" finished-at="2025-06-21T22:15:39 IST" duration-ms="591" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- availableTrain -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T21:52:37 IST" name="getResult" finished-at="2025-06-21T21:52:37 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T22:15:39 IST" name="getResult" finished-at="2025-06-21T22:15:39 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -188,19 +188,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="closeParams()[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T21:52:37 IST" name="closeParams" finished-at="2025-06-21T21:52:42 IST" duration-ms="4912" status="PASS">
+        <test-method is-config="true" signature="closeParams()[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T22:15:39 IST" name="closeParams" finished-at="2025-06-21T22:15:42 IST" duration-ms="3284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeParams -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T21:52:42 IST" name="flushReport" finished-at="2025-06-21T21:52:43 IST" duration-ms="277" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.selenium.test.testCases.TestMain@2cd76f31]" started-at="2025-06-21T22:15:42 IST" name="flushReport" finished-at="2025-06-21T22:15:42 IST" duration-ms="290" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
       </class> <!-- com.selenium.test.testCases.TestMain -->
     </test> <!-- TrainSearchEdge -->
-    <test started-at="2025-06-21T21:52:43 IST" name="TrainSearchChrome" finished-at="2025-06-21T21:52:56 IST" duration-ms="13710">
+    <test started-at="2025-06-21T22:15:42 IST" name="TrainSearchChrome" finished-at="2025-06-21T22:15:56 IST" duration-ms="14249">
       <class name="com.selenium.test.testCases.TestMain">
-        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T21:52:43 IST" name="setDriver" finished-at="2025-06-21T21:52:48 IST" duration-ms="5533" status="PASS">
+        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T22:15:42 IST" name="setDriver" finished-at="2025-06-21T22:15:49 IST" duration-ms="6771" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -211,19 +211,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method is-config="true" signature="startReporter()[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T21:52:48 IST" name="startReporter" finished-at="2025-06-21T21:52:48 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="startReporter()[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T22:15:49 IST" name="startReporter" finished-at="2025-06-21T22:15:49 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReporter -->
-        <test-method is-config="true" signature="setParams()[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T21:52:48 IST" name="setParams" finished-at="2025-06-21T21:52:48 IST" duration-ms="139" status="PASS">
+        <test-method is-config="true" signature="setParams()[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T22:15:49 IST" name="setParams" finished-at="2025-06-21T22:15:49 IST" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setParams -->
-        <test-method signature="alertHandle()[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T21:52:48 IST" name="alertHandle" finished-at="2025-06-21T21:52:48 IST" duration-ms="11" status="PASS">
+        <test-method signature="alertHandle()[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T22:15:49 IST" name="alertHandle" finished-at="2025-06-21T22:15:49 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- alertHandle -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T21:52:48 IST" name="getResult" finished-at="2025-06-21T21:52:48 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T22:15:49 IST" name="getResult" finished-at="2025-06-21T22:15:49 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -234,11 +234,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="testTitle()[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T21:52:48 IST" name="testTitle" finished-at="2025-06-21T21:52:48 IST" duration-ms="112" status="PASS">
+        <test-method signature="testTitle()[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T22:15:49 IST" name="testTitle" finished-at="2025-06-21T22:15:49 IST" duration-ms="137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTitle -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T21:52:48 IST" name="getResult" finished-at="2025-06-21T21:52:48 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T22:15:49 IST" name="getResult" finished-at="2025-06-21T22:15:49 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -249,11 +249,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="testURL()[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T21:52:48 IST" name="testURL" finished-at="2025-06-21T21:52:49 IST" duration-ms="83" status="PASS">
+        <test-method signature="testURL()[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T22:15:49 IST" name="testURL" finished-at="2025-06-21T22:15:49 IST" duration-ms="94" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testURL -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T21:52:49 IST" name="getResult" finished-at="2025-06-21T21:52:49 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T22:15:49 IST" name="getResult" finished-at="2025-06-21T22:15:49 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -264,11 +264,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="testSrcStation()[pri:1, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T21:52:49 IST" name="testSrcStation" finished-at="2025-06-21T21:52:49 IST" duration-ms="599" status="PASS">
+        <test-method signature="testSrcStation()[pri:1, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T22:15:49 IST" name="testSrcStation" finished-at="2025-06-21T22:15:50 IST" duration-ms="772" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSrcStation -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T21:52:49 IST" name="getResult" finished-at="2025-06-21T21:52:49 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T22:15:50 IST" name="getResult" finished-at="2025-06-21T22:15:50 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -279,11 +279,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="testDestStation()[pri:2, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T21:52:49 IST" name="testDestStation" finished-at="2025-06-21T21:52:50 IST" duration-ms="1033" status="PASS">
+        <test-method signature="testDestStation()[pri:2, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T22:15:50 IST" name="testDestStation" finished-at="2025-06-21T22:15:51 IST" duration-ms="799" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDestStation -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T21:52:50 IST" name="getResult" finished-at="2025-06-21T21:52:50 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T22:15:51 IST" name="getResult" finished-at="2025-06-21T22:15:51 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -294,7 +294,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="testDateSelection()[pri:3, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T21:52:50 IST" name="testDateSelection" finished-at="2025-06-21T21:52:52 IST" duration-ms="1509" status="FAIL">
+        <test-method signature="testDateSelection()[pri:3, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T22:15:51 IST" name="testDateSelection" finished-at="2025-06-21T22:15:53 IST" duration-ms="1461" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [25-Jun-25 Wed] but found [TEXT(TODAY()+4, "dd-mmm-yy ddd")]]]>
@@ -340,7 +340,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDateSelection -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T21:52:52 IST" name="getResult" finished-at="2025-06-21T21:52:52 IST" duration-ms="270" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T22:15:53 IST" name="getResult" finished-at="2025-06-21T22:15:53 IST" duration-ms="253" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -351,11 +351,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="selectChoices()[pri:4, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T21:52:52 IST" name="selectChoices" finished-at="2025-06-21T21:52:53 IST" duration-ms="1132" status="PASS">
+        <test-method signature="selectChoices()[pri:4, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T22:15:53 IST" name="selectChoices" finished-at="2025-06-21T22:15:54 IST" duration-ms="1165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectChoices -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T21:52:53 IST" name="getResult" finished-at="2025-06-21T21:52:53 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T22:15:54 IST" name="getResult" finished-at="2025-06-21T22:15:54 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -366,11 +366,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="availableTrain()[pri:5, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T21:52:53 IST" name="availableTrain" finished-at="2025-06-21T21:52:54 IST" duration-ms="583" status="PASS">
+        <test-method signature="availableTrain()[pri:5, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T22:15:54 IST" name="availableTrain" finished-at="2025-06-21T22:15:55 IST" duration-ms="604" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- availableTrain -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T21:52:54 IST" name="getResult" finished-at="2025-06-21T21:52:54 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T22:15:55 IST" name="getResult" finished-at="2025-06-21T22:15:55 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -381,11 +381,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="closeParams()[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T21:52:54 IST" name="closeParams" finished-at="2025-06-21T21:52:56 IST" duration-ms="2622" status="PASS">
+        <test-method is-config="true" signature="closeParams()[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T22:15:55 IST" name="closeParams" finished-at="2025-06-21T22:15:56 IST" duration-ms="1882" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeParams -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T21:52:56 IST" name="flushReport" finished-at="2025-06-21T21:52:56 IST" duration-ms="57" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.selenium.test.testCases.TestMain@4e50c791]" started-at="2025-06-21T22:15:56 IST" name="flushReport" finished-at="2025-06-21T22:15:56 IST" duration-ms="53" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->

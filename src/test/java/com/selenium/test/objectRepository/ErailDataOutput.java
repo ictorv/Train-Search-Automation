@@ -6,6 +6,8 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import com.selenium.test.data.ExcelUtils;
 
@@ -20,12 +22,27 @@ public class ErailDataOutput {
 		trains=new HashMap<String,String>();
 		this.driver=driver;
 		excel=new ExcelUtils(filename);
+		
+		PageFactory.initElements(driver, this);
 	}
   
+	//getting list of trains, for size of table
+	@FindBy(xpath="//*[@id=\"divTrainsList\"]/table[1]/tbody/tr/td[2]")
+	List <WebElement> trainlist;				
+	
+	//get changed source station
+	@FindBy(xpath="//*[@id=\"tdFromOnly\"]/label")
+	WebElement source;
+	
+	//get changed destination station
+	@FindBy(xpath="//*[@id=\"tdToOnly\"]/label")
+	WebElement destination;
+	
+	//get changed date value
+	@FindBy(xpath="//*[@id=\"tdDateFromTo\"]/input")
+	WebElement searchdate;
+	
 	public HashMap<String,String> getAllTrains() {
-		//getting list of trains, for size of table
-		List <WebElement> trainlist=driver.findElements(By.xpath("//*[@id=\"divTrainsList\"]/table[1]/tbody/tr/td[2]"));
-		
 		//looping to list of trains (train starts from row 2)
 		for(int i=2;i<trainlist.size();i++) {
 				
@@ -70,20 +87,14 @@ public class ErailDataOutput {
 	}
 		
 	public String getSource() {
-		//get changed source station
-		String source=driver.findElement(By.xpath("//*[@id=\"tdFromOnly\"]/label")).getText();
-		return source;
+		return source.getText();
 	}  
 	
 	public String getDest() {
-		//get changed destination station
-		String destination=driver.findElement(By.xpath("//*[@id=\"tdToOnly\"]/label")).getText();		 
-		return destination;
+		return destination.getText();
 	}
 	
 	public String getDate() {
-		//get changed date value
-		String searchdate=driver.findElement(By.xpath("//*[@id=\"tdDateFromTo\"]/input")).getAttribute("value");
-		return searchdate;
+		return searchdate.getAttribute("value");
 	}
 }
