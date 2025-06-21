@@ -13,7 +13,7 @@ import org.openqa.selenium.io.FileHandler;
 
 public class ScreenShot {
 	public static String filepath = "./screenshots/";
-
+ 
 	public static String screenShotTC(WebDriver scdriver, String fileName) {
 		DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy hh-mm-ss a z");
 		Date date = new Date();

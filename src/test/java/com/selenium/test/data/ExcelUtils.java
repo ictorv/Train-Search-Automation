@@ -71,7 +71,6 @@ public class ExcelUtils {
         fos = new FileOutputStream(filePath);
         wb.write(fos);
         fos.close();
-        System.out.println("Data written successfully.");
     }
 
     public void fillGreenColor(String sheetName, int rownum, int colnum) throws IOException {

@@ -25,8 +25,8 @@
           <include name="startReporter"/>
           <include name="setParams"/>
           <include name="flushReport"/>
-          <include name="closeParams"/>
           <include name="testDateSelection"/>
+          <include name="closeParams"/>
           <include name="getResult"/>
           <include name="setDriver"/>
         </methods>

@@ -17,11 +17,11 @@ public class DriverSetup {
 			driver = new ChromeDriver();
 		}else if (usebrowser.equalsIgnoreCase("edge")) {
 			driver = new EdgeDriver();
-		}else {
+		}else { 
             throw new IllegalArgumentException("Unsupported browser: " + browser);
         }
 		driver.manage().window().maximize();
-//		driver.manage().deleteAllCookies();
+		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get(url);
 		return driver;

@@ -7,14 +7,18 @@
         <methods>
           <include name="testURL"/>
           <include name="testTitle"/>
-          <include name="setParams"/>
           <include name="availableTrain"/>
-          <include name="closeParams"/>
-          <include name="selectChoices"/>
           <include name="testDestStation"/>
-          <include name="testDateSelection"/>
+          <include name="alertHandle"/>
           <include name="setDriver"/>
           <include name="testSrcStation"/>
+          <include name="startReporter"/>
+          <include name="setParams"/>
+          <include name="flushReport"/>
+          <include name="selectChoices"/>
+          <include name="closeParams"/>
+          <include name="testDateSelection"/>
+          <include name="getResult"/>
         </methods>
       </class> <!-- com.selenium.test.testCases.TestMain -->
     </classes>

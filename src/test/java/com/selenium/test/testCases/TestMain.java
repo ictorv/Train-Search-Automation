@@ -35,8 +35,13 @@ public class TestMain {
 	String filename;
 	
 	ExcelUtils excel;
+	int row;
+	int validCol;
+	int expCol;
+	
 	ExtentReportManager erm;
 
+	
 	@BeforeTest
 	@Parameters("browser")
 	public void setDriver(String browser) {
@@ -48,8 +53,11 @@ public class TestMain {
 	public void setParams() {
 		filename="TrainSearchData.xlsx";
 		pageInp=new ErailDataInput(driver,filename);
-		pageOut=new ErailDataOutput(driver);
+		pageOut=new ErailDataOutput(driver,filename);
 		excel=new ExcelUtils(filename);
+		
+		expCol=1;	
+		validCol=3;
 	}
 	
 	@BeforeTest
@@ -62,103 +70,129 @@ public class TestMain {
 	@Test 
 	public void testTitle() throws IOException {
 		String actTitle=pageInp.actTitle();
+		row=1;
 		
-		String expTitle=excel.getCellData("Testing", 1, 1);
-		excel.setCellData("Testing", 1, "Actual", actTitle);
+		String expTitle=excel.getCellData("Testing", row, expCol);
+		excel.setCellData("Testing", row, "Actual", actTitle);
 		try {
 			Assert.assertEquals(actTitle, expTitle);
-			excel.setCellData("Testing",1,"Validation Result","PASS");
-			excel.fillGreenColor("Testing", 1, 3);
+			excel.setCellData("Testing",row,"Validation Result","PASS");
+			excel.fillGreenColor("Testing", row, validCol);
+			System.out.println("Got correct title...");
 		}
 		catch(AssertionError e){
-			excel.setCellData("Testing", 1, "Validation Result", "FAIL");
-			excel.fillRedColor("Testing", 1, 3);
+			excel.setCellData("Testing", row, "Validation Result", "FAIL");
+			excel.fillRedColor("Testing", row, validCol);
+			System.out.println("Got incorrect title...");
+			throw e;
+		}
+	}  
+	
+	@Test 
+	public void testURL() throws IOException {
+		row=2;
+
+		String actUrl=pageInp.actURL();
+		String expUrl=excel.getCellData("Testing", row, expCol);
+		excel.setCellData("Testing", row, "Actual", actUrl);
+		try {
+			Assert.assertEquals(actUrl, expUrl);
+			excel.setCellData("Testing",row,"Validation Result","PASS");
+			excel.fillGreenColor("Testing", row, validCol);
+			System.out.println("Got correct URL...");
+		}
+		catch(AssertionError e){
+			excel.setCellData("Testing", row, "Validation Result", "FAIL");
+			excel.fillRedColor("Testing", row, validCol);
+			System.out.println("Got incorrect URL...");
 			throw e;
 		}
 	}
 	
-	@Test 
-	public void testURL() throws IOException {
-		String actUrl=pageInp.actURL();
-		String expUrl=excel.getCellData("Testing", 2, 1);
-		excel.setCellData("Testing", 2, "Actual", actUrl);
-		try {
-			Assert.assertEquals(actUrl, expUrl);
-			excel.setCellData("Testing",2,"Validation Result","PASS");
-			excel.fillGreenColor("Testing", 2, 3);
-		}
-		catch(AssertionError e){
-			excel.setCellData("Testing", 2, "Validation Result", "FAIL");
-			excel.fillRedColor("Testing", 2, 3);
-			throw e;
-		}
+	@Test(priority=0)
+	public void alertHandle() {
+		pageInp.acceptAlert();
+		erm.logPass("Handled Alert");
 	}
 	
 	@Test(priority=1)
 	public void testSrcStation() throws IOException {
-		pageInp.sourceStation();
+		row=3;
 		
-		ScreenShot.screenShotTC(driver, "01_SourceStation");
+		pageInp.sourceStation();
+		System.out.println("-----Selected Source Station-----");
+		ScreenShot.screenShotTC(driver, "1_SourceStation");
 		erm.logPass("Searched Source Station");
 		
 		String actSrc=pageOut.getSource();
-		String expSrc=excel.getCellData("Testing", 3, 1);
-//		System.out.println(actsrc +"-"+expsrc);
-		excel.setCellData("Testing", 3, "Actual", actSrc);
+		String expSrc=excel.getCellData("Testing",row, expCol);
+
+		excel.setCellData("Testing", row, "Actual", actSrc);
 		try {
 			Assert.assertEquals(actSrc,expSrc);
-			excel.setCellData("Testing",3,"Validation Result","PASS");
-			excel.fillGreenColor("Testing", 3, 3);
+			excel.setCellData("Testing",row,"Validation Result","PASS");
+			excel.fillGreenColor("Testing", row, validCol);
+			System.out.println("Got correct source station...");
 		}
 		catch(AssertionError e){
-			excel.setCellData("Testing", 3, "Validation Result", "FAIL");
-			excel.fillRedColor("Testing", 3, 3);
+			excel.setCellData("Testing", row, "Validation Result", "FAIL");
+			excel.fillRedColor("Testing", row, validCol);
+			System.out.println("Got incorrect source station...");
 			throw e;
 		}
 	}
 	
 	@Test(priority=2)
 	public void testDestStation() throws IOException {
+		row=4;
+		
 		pageInp.destStation();
-		ScreenShot.screenShotTC(driver, "02_DestinationStation");
+		System.out.println("-----Selected Destination Station-----");
+		ScreenShot.screenShotTC(driver, "2_DestinationStation");
 		erm.logPass("Searched Destination Station");
 		
 		String actDest= pageOut.getDest();
-		String expDest=excel.getCellData("Testing", 4, 1);
-		excel.setCellData("Testing", 4, "Actual", actDest);
+		String expDest=excel.getCellData("Testing", row, expCol);
+		excel.setCellData("Testing", row, "Actual", actDest);
 		try {
 			Assert.assertEquals(actDest,expDest);
-			excel.setCellData("Testing",4,"Validation Result","PASS");
-			excel.fillGreenColor("Testing", 4, 3);
+			excel.setCellData("Testing",row,"Validation Result","PASS");
+			excel.fillGreenColor("Testing", row, validCol);
+			System.out.println("Got correct destination station...");
 		}
 		catch(AssertionError e){
-			excel.setCellData("Testing", 4, "Validation Result", "FAIL");
-			excel.fillRedColor("Testing", 4, 3);
+			excel.setCellData("Testing", row, "Validation Result", "FAIL");
+			excel.fillRedColor("Testing", row, validCol);
+			System.out.println("Got incorrect destination station...");
 			throw e;
 		}
-		
 	}
 	
 	@Test(priority=3)
 	public void testDateSelection() throws IOException {
+		row=5;
+		
 		pageInp.getDateValues();
 		pageInp.dateSelection();
-
-		ScreenShot.screenShotTC(driver, "03_DateSelection");
+		System.out.println("-----Selected Journey Date-----");
+		ScreenShot.screenShotTC(driver, "3_DateSelection");
 		erm.logPass("Selected Date");
+		
 		pageInp.dateSelectionStatus();
 
-		String expDate=excel.getCellData("Testing", 5, 1);
+		String expDate=excel.getCellData("Testing", row, expCol);
 		String actDate=pageOut.getDate();  
-		excel.setCellData("Testing", 5, "Actual", actDate);
+		excel.setCellData("Testing", row, "Actual", actDate);
 		try {
 			Assert.assertEquals(expDate,actDate);
-			excel.setCellData("Testing",5,"Validation Result","PASS");
-			excel.fillGreenColor("Testing", 5, 3);
+			excel.setCellData("Testing",row,"Validation Result","PASS");
+			excel.fillGreenColor("Testing", row, validCol);
+			System.out.println("Got correct journey date...");
 		}
 		catch(AssertionError e){
-			excel.setCellData("Testing", 5, "Validation Result", "FAIL");
-			excel.fillRedColor("Testing", 5, 3);
+			excel.setCellData("Testing", row, "Validation Result", "FAIL");
+			excel.fillRedColor("Testing", row, validCol);
+			System.out.println("Got incorrect journey date...");
 			throw e;
 		}
 	}
@@ -166,52 +200,48 @@ public class TestMain {
 	@Test(priority=4)
 	public void selectChoices() {
 		pageInp.reserveQuota();
+		System.out.println("Selected reservation quota...");
+		ScreenShot.screenShotTC(driver, "4_QuotaSelection");
 		erm.logPass("Selected Reservation Quota");
 		
 		pageInp.classSelection();
+		System.out.println("Selected reservation class...");
+		ScreenShot.screenShotTC(driver, "5_ClassSelection");
 		erm.logPass("Selected Class");
 		
 		pageInp.searchBt();	
+		System.out.println("Searched Trains...");
 		erm.logPass("Searched Trains");
-		ScreenShot.screenShotTC(driver, "04_Choices");
-		
 	}
 	
 	@Test(priority=5)
 	public void availableTrain() throws IOException {
-		 HashMap<String,String>trains= pageOut.getAllTrains();
-		 
-		ScreenShot.screenShotTC(driver, "05_TrainList");
+		HashMap<String,String>trains= pageOut.getAllTrains(); 
+		System.out.println("Got Train List...");
+		ScreenShot.screenShotTC(driver, "6_TrainList");
 		erm.logPass("Got Train List");
-		 
-		 int i=1;
-		 for(String k: trains.keySet()) {
-			 System.out.println("Train no:"+k+" Train Name: "+trains.get(k));
-			 excel.setCellData("SearchData", i, "Train Number",k);
-			 excel.setCellData("SearchData", i, "Train Name",trains.get(k));
-			 i+=1;
-		 }
-		 
-		 
+
+		
+		pageOut.printAvailTrains();
 	 }
 	
 	@AfterMethod
-	   public void getResult(ITestResult result) {
-	       if(result.getStatus() == ITestResult.FAILURE) {
-	    	 //MarkupHelper is used to display the output in different colors
-	    	   erm.testLogger.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " - Test Case Failed", ExtentColor.RED));
-	    	   erm.testLogger.log(Status.FAIL, MarkupHelper.createLabel(result.getThrowable() + " - Test Case Failed", ExtentColor.RED));
-	    	   String screenshotPath = ScreenShot.screenShotTC(driver, result.getName());
-	    	 //To add it in the extent report 
-	    	   erm.testLogger.fail("Test Case Failed Snapshot is below " + erm.testLogger.addScreenCaptureFromPath("."+screenshotPath));	    	  
-	       }
-	       else if(result.getStatus() == ITestResult.SUCCESS) {
-	    	   erm.testLogger.log(Status.PASS, MarkupHelper.createLabel(result.getName()+" Test Case PASSED", ExtentColor.GREEN));
-	       }
-	       else if(result.getStatus() == ITestResult.SKIP){
-	    	   erm.testLogger.log(Status.SKIP, MarkupHelper.createLabel(result.getName() + " - Test Case Skipped", ExtentColor.ORANGE)); 
-	       }
-	   }
+	public void getResult(ITestResult result) {
+		if(result.getStatus() == ITestResult.FAILURE) {
+			//MarkupHelper is used to display the output in different colors
+			erm.testLogger.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " - Test Case Failed", ExtentColor.RED));
+	    	   	erm.testLogger.log(Status.FAIL, MarkupHelper.createLabel(result.getThrowable() + " - Test Case Failed", ExtentColor.RED));
+	    	   	String screenshotPath = ScreenShot.screenShotTC(driver, result.getName());
+	    	   	//To add it in the extent report 
+	    	   	erm.testLogger.fail("Test Case Failed Snapshot is below " + erm.testLogger.addScreenCaptureFromPath("."+screenshotPath));	    	  
+		}
+		else if(result.getStatus() == ITestResult.SUCCESS) {
+			erm.testLogger.log(Status.PASS, MarkupHelper.createLabel(result.getName()+" Test Case PASSED", ExtentColor.GREEN));
+		}
+		else if(result.getStatus() == ITestResult.SKIP){
+			erm.testLogger.log(Status.SKIP, MarkupHelper.createLabel(result.getName() + " - Test Case Skipped", ExtentColor.ORANGE)); 
+		}
+	}
 	
 	@AfterClass
 	public void closeParams() {
