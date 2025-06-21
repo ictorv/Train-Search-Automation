@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Personal\Automation\workspace\TrainSearchAutomation\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">14 methods, 2 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.test.testCases.TestMain" class="method navigator-link" hash-for-method="testDateSelection">testDateSelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.test.testCases.TestMain" class="method navigator-link" hash-for-method="testDateSelection">testDateSelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.test.testCases.TestMain" class="method navigator-link" hash-for-method="availableTrain">availableTrain</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.test.testCases.TestMain" class="method navigator-link" hash-for-method="availableTrain">availableTrain</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.test.testCases.TestMain" class="method navigator-link" hash-for-method="selectChoices">selectChoices</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.test.testCases.TestMain" class="method navigator-link" hash-for-method="selectChoices">selectChoices</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.test.testCases.TestMain" class="method navigator-link" hash-for-method="testDestStation">testDestStation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.test.testCases.TestMain" class="method navigator-link" hash-for-method="testDestStation">testDestStation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.test.testCases.TestMain" class="method navigator-link" hash-for-method="testSrcStation">testSrcStation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.test.testCases.TestMain" class="method navigator-link" hash-for-method="testSrcStation">testSrcStation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.test.testCases.TestMain" class="method navigator-link" hash-for-method="testTitle">testTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.test.testCases.TestMain" class="method navigator-link" hash-for-method="testTitle">testTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.test.testCases.TestMain" class="method navigator-link" hash-for-method="testURL">testURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.test.testCases.TestMain" class="method navigator-link" hash-for-method="testURL">testURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.selenium.test.testCases.TestMain</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDateSelection">
+                  </a> <!-- testDateSelection -->
+                  <span class="method-name">testDateSelection</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [25-Jun-25 Wed] but found [TEXT(TODAY()+4, &quot;dd-mmm-yy ddd&quot;)]
+	at com.selenium.test.testCases.TestMain.testDateSelection(TestMain.java:162)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDateSelection">
+                  </a> <!-- testDateSelection -->
+                  <span class="method-name">testDateSelection</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [25-Jun-25 Wed] but found [TEXT(TODAY()+4, &quot;dd-mmm-yy ddd&quot;)]
+	at com.selenium.test.testCases.TestMain.testDateSelection(TestMain.java:162)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.selenium.test.testCases.TestMain</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="availableTrain">
+                  </a> <!-- availableTrain -->
+                  <span class="method-name">availableTrain</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="availableTrain">
+                  </a> <!-- availableTrain -->
+                  <span class="method-name">availableTrain</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectChoices">
+                  </a> <!-- selectChoices -->
+                  <span class="method-name">selectChoices</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectChoices">
+                  </a> <!-- selectChoices -->
+                  <span class="method-name">selectChoices</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDestStation">
+                  </a> <!-- testDestStation -->
+                  <span class="method-name">testDestStation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDestStation">
+                  </a> <!-- testDestStation -->
+                  <span class="method-name">testDestStation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSrcStation">
+                  </a> <!-- testSrcStation -->
+                  <span class="method-name">testSrcStation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSrcStation">
+                  </a> <!-- testSrcStation -->
+                  <span class="method-name">testSrcStation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTitle">
+                  </a> <!-- testTitle -->
+                  <span class="method-name">testTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTitle">
+                  </a> <!-- testTitle -->
+                  <span class="method-name">testTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testURL">
+                  </a> <!-- testURL -->
+                  <span class="method-name">testURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testURL">
+                  </a> <!-- testURL -->
+                  <span class="method-name">testURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Personal\Automation\workspace\TrainSearchAutomation\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TrainSearchEdge&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.selenium.test.testCases.TestMain&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TrainSearchEdge --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TrainSearchChrome&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.selenium.test.testCases.TestMain&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TrainSearchChrome --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">TrainSearchEdge (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TrainSearchChrome (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(14);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testDateSelection')
+data.setCell(0, 2, 'com.selenium.test.testCases.TestMain')
+data.setCell(0, 3, 1606);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testDateSelection')
+data.setCell(1, 2, 'com.selenium.test.testCases.TestMain')
+data.setCell(1, 3, 1566);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'availableTrain')
+data.setCell(2, 2, 'com.selenium.test.testCases.TestMain')
+data.setCell(2, 3, 1351);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'availableTrain')
+data.setCell(3, 2, 'com.selenium.test.testCases.TestMain')
+data.setCell(3, 3, 1086);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'selectChoices')
+data.setCell(4, 2, 'com.selenium.test.testCases.TestMain')
+data.setCell(4, 3, 1043);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testTitle')
+data.setCell(5, 2, 'com.selenium.test.testCases.TestMain')
+data.setCell(5, 3, 1005);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testSrcStation')
+data.setCell(6, 2, 'com.selenium.test.testCases.TestMain')
+data.setCell(6, 3, 906);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testDestStation')
+data.setCell(7, 2, 'com.selenium.test.testCases.TestMain')
+data.setCell(7, 3, 807);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'selectChoices')
+data.setCell(8, 2, 'com.selenium.test.testCases.TestMain')
+data.setCell(8, 3, 807);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testDestStation')
+data.setCell(9, 2, 'com.selenium.test.testCases.TestMain')
+data.setCell(9, 3, 780);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testSrcStation')
+data.setCell(10, 2, 'com.selenium.test.testCases.TestMain')
+data.setCell(10, 3, 631);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testTitle')
+data.setCell(11, 2, 'com.selenium.test.testCases.TestMain')
+data.setCell(11, 3, 386);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testURL')
+data.setCell(12, 2, 'com.selenium.test.testCases.TestMain')
+data.setCell(12, 3, 142);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testURL')
+data.setCell(13, 2, 'com.selenium.test.testCases.TestMain')
+data.setCell(13, 3, 111);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.test.testCases.TestMain</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setDriver(edge)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">startReporter</span>
+                <span class="method-start">6309 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">setParams</span>
+                <span class="method-start">6677 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testTitle</span>
+                <span class="method-start">7927 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=testTitle status=SUCCESS method=TestMain.testTitle()[pri:0, instance:com.selenium.t...)</span>
+                <span class="method-start">8326 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testURL</span>
+                <span class="method-start">8342 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=testURL status=SUCCESS method=TestMain.testURL()[pri:0, instance:com.selenium.test....)</span>
+                <span class="method-start">8488 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testSrcStation</span>
+                <span class="method-start">8490 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=testSrcStation status=SUCCESS method=TestMain.testSrcStation()[pri:1, instance:com....)</span>
+                <span class="method-start">9398 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testDestStation</span>
+                <span class="method-start">9400 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=testDestStation status=SUCCESS method=TestMain.testDestStation()[pri:2, instance:co...)</span>
+                <span class="method-start">10208 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDateSelection</span>
+                <span class="method-start">10210 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=testDateSelection status=FAILURE method=TestMain.testDateSelection()[pri:3, instanc...)</span>
+                <span class="method-start">11821 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">selectChoices</span>
+                <span class="method-start">12088 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=selectChoices status=SUCCESS method=TestMain.selectChoices()[pri:4, instance:com.se...)</span>
+                <span class="method-start">13132 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">availableTrain</span>
+                <span class="method-start">13133 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=availableTrain status=SUCCESS method=TestMain.availableTrain()[pri:5, instance:com....)</span>
+                <span class="method-start">14490 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeParams</span>
+                <span class="method-start">14492 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-test after">
+                <span class="method-name">flushReport</span>
+                <span class="method-start">19034 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test before">
+                <span class="method-name">setDriver(chrome)</span>
+                <span class="method-start">19377 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">startReporter</span>
+                <span class="method-start">22735 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">setParams</span>
+                <span class="method-start">22738 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testTitle</span>
+                <span class="method-start">22789 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=testTitle status=SUCCESS method=TestMain.testTitle()[pri:0, instance:com.selenium.t...)</span>
+                <span class="method-start">23796 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testURL</span>
+                <span class="method-start">23797 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=testURL status=SUCCESS method=TestMain.testURL()[pri:0, instance:com.selenium.test....)</span>
+                <span class="method-start">23909 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testSrcStation</span>
+                <span class="method-start">23910 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=testSrcStation status=SUCCESS method=TestMain.testSrcStation()[pri:1, instance:com....)</span>
+                <span class="method-start">24542 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testDestStation</span>
+                <span class="method-start">24543 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=testDestStation status=SUCCESS method=TestMain.testDestStation()[pri:2, instance:co...)</span>
+                <span class="method-start">25324 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDateSelection</span>
+                <span class="method-start">25325 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=testDateSelection status=FAILURE method=TestMain.testDateSelection()[pri:3, instanc...)</span>
+                <span class="method-start">26893 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">selectChoices</span>
+                <span class="method-start">27134 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=selectChoices status=SUCCESS method=TestMain.selectChoices()[pri:4, instance:com.se...)</span>
+                <span class="method-start">27942 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">availableTrain</span>
+                <span class="method-start">27943 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=availableTrain status=SUCCESS method=TestMain.availableTrain()[pri:5, instance:com....)</span>
+                <span class="method-start">29030 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeParams</span>
+                <span class="method-start">29031 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-test after">
+                <span class="method-name">flushReport</span>
+                <span class="method-start">32135 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

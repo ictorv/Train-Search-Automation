@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="12" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-21T12:34:19 IST" name="Suite" finished-at="2025-06-21T12:34:51 IST" duration-ms="32214">
+    <groups>
+    </groups>
+    <test started-at="2025-06-21T12:34:19 IST" name="TrainSearchEdge" finished-at="2025-06-21T12:34:38 IST" duration-ms="19353">
+      <class name="com.selenium.test.testCases.TestMain">
+        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:com.selenium.test.testCases.TestMain@40005471]" started-at="2025-06-21T12:34:19 IST" name="setDriver" finished-at="2025-06-21T12:34:25 IST" duration-ms="6308" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="startReporter()[pri:0, instance:com.selenium.test.testCases.TestMain@40005471]" started-at="2025-06-21T12:34:25 IST" name="startReporter" finished-at="2025-06-21T12:34:26 IST" duration-ms="351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReporter -->
+        <test-method is-config="true" signature="setParams()[pri:0, instance:com.selenium.test.testCases.TestMain@40005471]" started-at="2025-06-21T12:34:26 IST" name="setParams" finished-at="2025-06-21T12:34:27 IST" duration-ms="1238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setParams -->
+        <test-method signature="testTitle()[pri:0, instance:com.selenium.test.testCases.TestMain@40005471]" started-at="2025-06-21T12:34:27 IST" name="testTitle" finished-at="2025-06-21T12:34:27 IST" duration-ms="386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTitle -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@40005471]" started-at="2025-06-21T12:34:27 IST" name="getResult" finished-at="2025-06-21T12:34:27 IST" duration-ms="12" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testTitle status=SUCCESS method=TestMain.testTitle()[pri:0, instance:com.selenium.test.testCases.TestMain@40005471] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="testURL()[pri:0, instance:com.selenium.test.testCases.TestMain@40005471]" started-at="2025-06-21T12:34:27 IST" name="testURL" finished-at="2025-06-21T12:34:28 IST" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testURL -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@40005471]" started-at="2025-06-21T12:34:28 IST" name="getResult" finished-at="2025-06-21T12:34:28 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testURL status=SUCCESS method=TestMain.testURL()[pri:0, instance:com.selenium.test.testCases.TestMain@40005471] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="testSrcStation()[pri:1, instance:com.selenium.test.testCases.TestMain@40005471]" started-at="2025-06-21T12:34:28 IST" name="testSrcStation" finished-at="2025-06-21T12:34:29 IST" duration-ms="906" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSrcStation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@40005471]" started-at="2025-06-21T12:34:29 IST" name="getResult" finished-at="2025-06-21T12:34:29 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSrcStation status=SUCCESS method=TestMain.testSrcStation()[pri:1, instance:com.selenium.test.testCases.TestMain@40005471] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="testDestStation()[pri:2, instance:com.selenium.test.testCases.TestMain@40005471]" started-at="2025-06-21T12:34:29 IST" name="testDestStation" finished-at="2025-06-21T12:34:29 IST" duration-ms="807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDestStation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@40005471]" started-at="2025-06-21T12:34:29 IST" name="getResult" finished-at="2025-06-21T12:34:29 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testDestStation status=SUCCESS method=TestMain.testDestStation()[pri:2, instance:com.selenium.test.testCases.TestMain@40005471] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="testDateSelection()[pri:3, instance:com.selenium.test.testCases.TestMain@40005471]" started-at="2025-06-21T12:34:29 IST" name="testDateSelection" finished-at="2025-06-21T12:34:31 IST" duration-ms="1606" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [25-Jun-25 Wed] but found [TEXT(TODAY()+4, "dd-mmm-yy ddd")]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [25-Jun-25 Wed] but found [TEXT(TODAY()+4, "dd-mmm-yy ddd")]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.selenium.test.testCases.TestMain.testDateSelection(TestMain.java:162)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDateSelection -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@40005471]" started-at="2025-06-21T12:34:31 IST" name="getResult" finished-at="2025-06-21T12:34:31 IST" duration-ms="266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testDateSelection status=FAILURE method=TestMain.testDateSelection()[pri:3, instance:com.selenium.test.testCases.TestMain@40005471] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="selectChoices()[pri:4, instance:com.selenium.test.testCases.TestMain@40005471]" started-at="2025-06-21T12:34:31 IST" name="selectChoices" finished-at="2025-06-21T12:34:32 IST" duration-ms="1043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectChoices -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@40005471]" started-at="2025-06-21T12:34:32 IST" name="getResult" finished-at="2025-06-21T12:34:32 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=selectChoices status=SUCCESS method=TestMain.selectChoices()[pri:4, instance:com.selenium.test.testCases.TestMain@40005471] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="availableTrain()[pri:5, instance:com.selenium.test.testCases.TestMain@40005471]" started-at="2025-06-21T12:34:32 IST" name="availableTrain" finished-at="2025-06-21T12:34:34 IST" duration-ms="1351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- availableTrain -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@40005471]" started-at="2025-06-21T12:34:34 IST" name="getResult" finished-at="2025-06-21T12:34:34 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=availableTrain status=SUCCESS method=TestMain.availableTrain()[pri:5, instance:com.selenium.test.testCases.TestMain@40005471] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="closeParams()[pri:0, instance:com.selenium.test.testCases.TestMain@40005471]" started-at="2025-06-21T12:34:34 IST" name="closeParams" finished-at="2025-06-21T12:34:38 IST" duration-ms="4542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeParams -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.selenium.test.testCases.TestMain@40005471]" started-at="2025-06-21T12:34:38 IST" name="flushReport" finished-at="2025-06-21T12:34:38 IST" duration-ms="310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- com.selenium.test.testCases.TestMain -->
+    </test> <!-- TrainSearchEdge -->
+    <test started-at="2025-06-21T12:34:39 IST" name="TrainSearchChrome" finished-at="2025-06-21T12:34:51 IST" duration-ms="12829">
+      <class name="com.selenium.test.testCases.TestMain">
+        <test-method is-config="true" signature="setDriver(java.lang.String)[pri:0, instance:com.selenium.test.testCases.TestMain@1e66f1f5]" started-at="2025-06-21T12:34:39 IST" name="setDriver" finished-at="2025-06-21T12:34:42 IST" duration-ms="3358" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="startReporter()[pri:0, instance:com.selenium.test.testCases.TestMain@1e66f1f5]" started-at="2025-06-21T12:34:42 IST" name="startReporter" finished-at="2025-06-21T12:34:42 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReporter -->
+        <test-method is-config="true" signature="setParams()[pri:0, instance:com.selenium.test.testCases.TestMain@1e66f1f5]" started-at="2025-06-21T12:34:42 IST" name="setParams" finished-at="2025-06-21T12:34:42 IST" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setParams -->
+        <test-method signature="testTitle()[pri:0, instance:com.selenium.test.testCases.TestMain@1e66f1f5]" started-at="2025-06-21T12:34:42 IST" name="testTitle" finished-at="2025-06-21T12:34:43 IST" duration-ms="1005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTitle -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@1e66f1f5]" started-at="2025-06-21T12:34:43 IST" name="getResult" finished-at="2025-06-21T12:34:43 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testTitle status=SUCCESS method=TestMain.testTitle()[pri:0, instance:com.selenium.test.testCases.TestMain@1e66f1f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="testURL()[pri:0, instance:com.selenium.test.testCases.TestMain@1e66f1f5]" started-at="2025-06-21T12:34:43 IST" name="testURL" finished-at="2025-06-21T12:34:43 IST" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testURL -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@1e66f1f5]" started-at="2025-06-21T12:34:43 IST" name="getResult" finished-at="2025-06-21T12:34:43 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testURL status=SUCCESS method=TestMain.testURL()[pri:0, instance:com.selenium.test.testCases.TestMain@1e66f1f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="testSrcStation()[pri:1, instance:com.selenium.test.testCases.TestMain@1e66f1f5]" started-at="2025-06-21T12:34:43 IST" name="testSrcStation" finished-at="2025-06-21T12:34:44 IST" duration-ms="631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSrcStation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@1e66f1f5]" started-at="2025-06-21T12:34:44 IST" name="getResult" finished-at="2025-06-21T12:34:44 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSrcStation status=SUCCESS method=TestMain.testSrcStation()[pri:1, instance:com.selenium.test.testCases.TestMain@1e66f1f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="testDestStation()[pri:2, instance:com.selenium.test.testCases.TestMain@1e66f1f5]" started-at="2025-06-21T12:34:44 IST" name="testDestStation" finished-at="2025-06-21T12:34:44 IST" duration-ms="780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDestStation -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@1e66f1f5]" started-at="2025-06-21T12:34:44 IST" name="getResult" finished-at="2025-06-21T12:34:44 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testDestStation status=SUCCESS method=TestMain.testDestStation()[pri:2, instance:com.selenium.test.testCases.TestMain@1e66f1f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="testDateSelection()[pri:3, instance:com.selenium.test.testCases.TestMain@1e66f1f5]" started-at="2025-06-21T12:34:44 IST" name="testDateSelection" finished-at="2025-06-21T12:34:46 IST" duration-ms="1566" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [25-Jun-25 Wed] but found [TEXT(TODAY()+4, "dd-mmm-yy ddd")]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [25-Jun-25 Wed] but found [TEXT(TODAY()+4, "dd-mmm-yy ddd")]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.selenium.test.testCases.TestMain.testDateSelection(TestMain.java:162)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDateSelection -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@1e66f1f5]" started-at="2025-06-21T12:34:46 IST" name="getResult" finished-at="2025-06-21T12:34:46 IST" duration-ms="240" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testDateSelection status=FAILURE method=TestMain.testDateSelection()[pri:3, instance:com.selenium.test.testCases.TestMain@1e66f1f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="selectChoices()[pri:4, instance:com.selenium.test.testCases.TestMain@1e66f1f5]" started-at="2025-06-21T12:34:46 IST" name="selectChoices" finished-at="2025-06-21T12:34:47 IST" duration-ms="807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectChoices -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@1e66f1f5]" started-at="2025-06-21T12:34:47 IST" name="getResult" finished-at="2025-06-21T12:34:47 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=selectChoices status=SUCCESS method=TestMain.selectChoices()[pri:4, instance:com.selenium.test.testCases.TestMain@1e66f1f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="availableTrain()[pri:5, instance:com.selenium.test.testCases.TestMain@1e66f1f5]" started-at="2025-06-21T12:34:47 IST" name="availableTrain" finished-at="2025-06-21T12:34:48 IST" duration-ms="1086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- availableTrain -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.selenium.test.testCases.TestMain@1e66f1f5]" started-at="2025-06-21T12:34:48 IST" name="getResult" finished-at="2025-06-21T12:34:48 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=availableTrain status=SUCCESS method=TestMain.availableTrain()[pri:5, instance:com.selenium.test.testCases.TestMain@1e66f1f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="closeParams()[pri:0, instance:com.selenium.test.testCases.TestMain@1e66f1f5]" started-at="2025-06-21T12:34:48 IST" name="closeParams" finished-at="2025-06-21T12:34:51 IST" duration-ms="3104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeParams -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.selenium.test.testCases.TestMain@1e66f1f5]" started-at="2025-06-21T12:34:51 IST" name="flushReport" finished-at="2025-06-21T12:34:51 IST" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- com.selenium.test.testCases.TestMain -->
+    </test> <!-- TrainSearchChrome -->
+  </suite> <!-- Suite -->
+</testng-results>
