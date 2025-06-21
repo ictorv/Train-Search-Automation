@@ -135,9 +135,12 @@ public class ErailDataInput {
 	}
 	
 	public void getDateValues() {
-		//getting journey date, i.e. 4 day after current date
+		row=1;
+		col=2;
+		//getting journey date, i.e. nday mentioned in excel day after current date
+		int nday= Integer.parseInt(excel.getCellData(sheet, row, col));
 		LocalDate today = LocalDate.now();
-		LocalDate journeyDate = today.plusDays(4);
+		LocalDate journeyDate = today.plusDays(nday);
 
 		//formatting date to match same as in website 
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMM-yy");
