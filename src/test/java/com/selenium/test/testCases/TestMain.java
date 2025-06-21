@@ -22,7 +22,6 @@ import com.selenium.test.objectRepository.ErailDataOutput;
 import com.selenium.test.erailUtilities.ExtentReportManager;
 import com.selenium.test.erailUtilities.ScreenShot;
 
-
 import org.testng.Assert;
 import org.testng.ITestResult;
 
@@ -41,6 +40,7 @@ public class TestMain {
 	
 	ExtentReportManager erm;
 	
+	
 	/**
 	 * setup setDriver class
 	 * launch browser
@@ -52,6 +52,7 @@ public class TestMain {
 		dset=new DriverSetup();
 		driver=dset.driverLaunch(browser);
 	}
+	
 	
 	/**
 	 * Set parameters:
@@ -73,6 +74,7 @@ public class TestMain {
 		validCol=3;
 	}
 	
+	
 	/**
 	 * Initialize Extent Report
 	 */
@@ -83,6 +85,7 @@ public class TestMain {
 		erm.createTest("Erail Train Search");
 	   }
   
+	
 	/**
 	 * actTitle - stores actual title and write in excel
 	 * expTitle - get expected title from excel
@@ -96,6 +99,7 @@ public class TestMain {
 		excel.setCellData("Testing", row, "Actual", actTitle);
 
 		String expTitle=excel.getCellData("Testing", row, expCol);
+		
 		try {
 			Assert.assertEquals(actTitle, expTitle);
 			excel.setCellData("Testing",row,"Validation Result","PASS");
@@ -110,6 +114,7 @@ public class TestMain {
 		}
 	}  
 	
+	
 	/**
 	 * actUrl - stores actual URL and write in excel
 	 * expUrl - get expected URL from excel
@@ -121,8 +126,10 @@ public class TestMain {
 		row=2;
 
 		String actUrl=pageInp.actURL();
-		String expUrl=excel.getCellData("Testing", row, expCol);
 		excel.setCellData("Testing", row, "Actual", actUrl);
+		
+		String expUrl=excel.getCellData("Testing", row, expCol);
+
 		try {
 			Assert.assertEquals(actUrl, expUrl);
 			excel.setCellData("Testing",row,"Validation Result","PASS");
@@ -137,6 +144,7 @@ public class TestMain {
 		}
 	}
 	
+	
 	/**
 	 * Accepts alert if appears
 	 */
@@ -145,6 +153,7 @@ public class TestMain {
 		pageInp.acceptAlert();
 		erm.logPass("Handled Alert");
 	}
+	
 	
 	/**
 	 * sourceStation() - select source station, data fetched from excel
@@ -163,9 +172,10 @@ public class TestMain {
 		erm.logPass("Searched Source Station");
 		
 		String actSrc=pageOut.getSource();
+		excel.setCellData("Testing", row, "Actual", actSrc);
+		
 		String expSrc=excel.getCellData("Testing",row, expCol);
 
-		excel.setCellData("Testing", row, "Actual", actSrc);
 		try {
 			Assert.assertEquals(actSrc,expSrc);
 			excel.setCellData("Testing",row,"Validation Result","PASS");
@@ -179,6 +189,7 @@ public class TestMain {
 			throw e;
 		}
 	}
+	
 	
 	/**
 	 * destStation() - select destination station, data fetched from excel
@@ -198,7 +209,7 @@ public class TestMain {
 		
 		String actDest= pageOut.getDest();
 		excel.setCellData("Testing", row, "Actual", actDest);
-		
+		 
 		String expDest=excel.getCellData("Testing", row, expCol);
 		try {
 			Assert.assertEquals(actDest,expDest);
@@ -213,6 +224,7 @@ public class TestMain {
 			throw e;
 		}
 	}
+	
 	
 	/**
 	 * getDateValues() - fetch number of days and finds journey date
@@ -238,6 +250,7 @@ public class TestMain {
 		excel.setCellData("Testing", row, "Actual", actDate);
 		
 		String expDate=excel.getCellData("Testing", row, expCol);
+		
 		try {
 			Assert.assertEquals(expDate,actDate);
 			excel.setCellData("Testing",row,"Validation Result","PASS");
@@ -251,6 +264,7 @@ public class TestMain {
 			throw e;
 		}
 	}
+	
 	
 	/**
 	 * reserveQuota() - select reservation quota from excel
@@ -274,6 +288,7 @@ public class TestMain {
 		erm.logPass("Searched Trains");
 	}
 	
+	
 	/**
 	 * getAllTrains() - get list of trains from source to destination
 	 * printAvailTrains() - print all list of trains
@@ -287,6 +302,7 @@ public class TestMain {
 
 		pageOut.printAvailTrains();
 	 }
+	
 	
 	/**
 	 * For handling Extent Report
@@ -310,6 +326,7 @@ public class TestMain {
 		}
 	}
 	
+	
 	/**
 	 * Closes WebDriver parameter
 	 */
@@ -319,6 +336,7 @@ public class TestMain {
 			dset.driverClose();
 	    }
 	}
+	
 	
 	/**
 	 * Closes ExtentReport parameter

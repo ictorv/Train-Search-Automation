@@ -112,8 +112,6 @@ public class ExcelUtils {
         fos = new FileOutputStream(filePath);
         wb.write(fos);
         fos.close();
-
-//        System.out.println("Color applied successfully to cell [" + rownum + "," + colnum + "]");
     }
 
 
@@ -124,7 +122,7 @@ public class ExcelUtils {
             if (wb != null) wb.close();
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        } 
     }
 
     // Test main method

@@ -41,7 +41,12 @@ public class ErailDataOutput {
 	@FindBy(xpath="//*[@id=\"tdDateFromTo\"]/input")
 	WebElement searchdate;
 	
+	/**
+	 * finds all trains available from source to destination
+	 * @return hashMap of train number as key and train name as values
+	 */
 	public HashMap<String,String> getAllTrains() {
+
 		//looping to list of trains (train starts from row 2)
 		for(int i=2;i<trainlist.size();i++) {
 				
@@ -76,6 +81,9 @@ public class ErailDataOutput {
 	}
 	
 	
+	/**
+	 * print trains for required source and destination
+	 */
 	public void printAvailTrains() {
 		//print trains
 		System.out.println("===========AVAILABLE TRAINS===========");
@@ -84,15 +92,30 @@ public class ErailDataOutput {
 		}
 		System.out.println("======================================");
 	}
+	
 		
+	/**
+	 * get changed source train for later validation
+	 * @return source train name
+	 */
 	public String getSource() {
 		return source.getText();
 	}  
 	
+	
+	/**
+	 * get changed destination train for later validation
+	 * @return destination train name
+	 */
 	public String getDest() {
 		return destination.getText();
 	}
 	
+	
+	/**
+	 * get changed date in page 
+	 * @return date in string format
+	 */
 	public String getDate() {
 		return searchdate.getAttribute("value");
 	}

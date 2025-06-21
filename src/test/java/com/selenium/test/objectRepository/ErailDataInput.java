@@ -74,6 +74,10 @@ public class ErailDataInput {
 	@FindBy(id="buttonFromTo")
 	WebElement submit;
 	
+	
+	/**
+	 * accepts alert if available
+	 */
 	public void acceptAlert() {
 		try {
 			Alert myalert=driver.switchTo().alert();
@@ -85,14 +89,31 @@ public class ErailDataInput {
 		}
 	}
 	
+	/**
+	 * get title of web page
+	 * @return actual title
+	 */
 	public String actTitle() {
 		return driver.getTitle();
 	}
 	
+	
+	/**
+	 * get URL of web page
+	 * @return actual URL
+	 */
 	public String actURL() {
 		return driver.getCurrentUrl();
 	}
 	
+	
+	/**
+	 * start.clear()- clear pre-available train
+	 * Get source train from excel
+	 * Pass into input box
+	 * Get list of available train
+	 * Loop over list of available train to get desired train (match if contains expected source)
+	 */
 	public void sourceStation() {
 		row=1;
 		col=0;
@@ -114,6 +135,14 @@ public class ErailDataInput {
 		
 	}
 	
+	
+	/**
+	 * dest.clear()- clear pre-available train
+	 * Get destination train from excel
+	 * Pass into input box
+	 * Get list of available train
+	 * Loop over list of available train to get desired train (match if contains expected destination)
+	 */
 	public void destStation() {
 		row=1;
 		col=1;
@@ -134,6 +163,11 @@ public class ErailDataInput {
 		}
 	}
 	
+	
+	/**
+	 * Get number of days after which we want journey
+	 * Finds required date and month in proper format
+	 */
 	public void getDateValues() {
 		row=1;
 		col=2;
@@ -142,12 +176,20 @@ public class ErailDataInput {
 		LocalDate today = LocalDate.now();
 		LocalDate journeyDate = today.plusDays(nday);
 
-		//formatting date to match same as in website 
+		//formatting date to match same as in web site 
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMM-yy");
 		month= journeyDate.format(formatter);
 		date=String.valueOf(journeyDate.getDayOfMonth());
 	}
 	
+	
+	/**
+	 * choose date from calendar from desired date 
+	 * checks if month matches from visible date table
+	 * pass through each row (starting from 4 , ending at 9)
+	 *    - check if giver row contains required date
+	 *    - break complete loop once found 
+	 */
 	public void dateSelection() {
 		int monthPos;
 		
@@ -183,6 +225,10 @@ public class ErailDataInput {
 		}
 	}
 	
+	
+	/**
+	 * Log whether provided date is valid or not
+	 */
 	public void dateSelectionStatus() {
 		//invalid date is mentioned
 		if (!datestatus) {
@@ -190,6 +236,10 @@ public class ErailDataInput {
 		}
 	}
 	
+	
+	/**
+	 * Choose Reservation quota
+	 */
 	public void reserveQuota() {
 		row=1;
 		col=3;
@@ -203,6 +253,10 @@ public class ErailDataInput {
 		}
 	}
 	
+	
+	/**
+	 * choose Reservation class
+	 */
 	public void classSelection() {
 		row=1;
 		col=4;
@@ -216,6 +270,10 @@ public class ErailDataInput {
 		}
 	}
 	
+	
+	/**
+	 * Search Trains
+	 */
 	public void searchBt() {
 		submit.click();
 	}
