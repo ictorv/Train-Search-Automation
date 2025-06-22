@@ -292,15 +292,25 @@ public class TestMain {
 	/**
 	 * getAllTrains() - get list of trains from source to destination
 	 * printAvailTrains() - print all list of trains
+	 * @throws IOException when unable to write train number, train name in excel
 	 */
 	@Test(priority=5)
-	public void availableTrain(){
+	public void availableTrain() throws IOException{
 		HashMap<String,String>trains= pageOut.getAllTrains(); 
 		System.out.println("Got Train List Found "+trains.size()+"...");
 		ScreenShot.screenShotTC(driver, "6_TrainList");
 		erm.logPass("Got Train List");
 
 		pageOut.printAvailTrains();
+		
+		//passing train no. and train name in excel
+		row=1;
+		for(String trainNo: trains.keySet()) {
+			System.out.println("Train no:"+row+" Train Name: "+trains.get(trainNo));
+			excel.setCellData("SearchData", row, "Train Number",trainNo);
+			excel.setCellData("SearchData", row, "Train Name",trains.get(trainNo));
+			row+=1;
+		 }
 	 }
 	
 	
