@@ -306,7 +306,7 @@ public class TestMain {
 		//passing train no. and train name in excel
 		row=1;
 		for(String trainNo: trains.keySet()) {
-			System.out.println("Train no:"+row+" Train Name: "+trains.get(trainNo));
+//			System.out.println("Train no:"+row+" Train Name: "+trains.get(trainNo));
 			excel.setCellData("SearchData", row, "Train Number",trainNo);
 			excel.setCellData("SearchData", row, "Train Name",trains.get(trainNo));
 			row+=1;

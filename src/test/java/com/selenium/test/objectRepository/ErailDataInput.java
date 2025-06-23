@@ -184,6 +184,21 @@ public class ErailDataInput {
 	
 	
 	/**
+	 * @param mnth for month parameter
+	 * @param weekRow for row
+	 * @param day for day
+	 * @return true if bug found in calender and skip
+	 */
+	public boolean bugSkip (int mnth, int weekRow, int day) {
+		//last table, starting from last 2 rows, last 2 rows does not contains 1 to 15 days
+		if(mnth==5 && weekRow>=8 && day<15) {
+			return true;
+		}
+		return false;	
+	}
+	
+	
+	/**
 	 * choose date from calendar from desired date 
 	 * checks if month matches from visible date table
 	 * pass through each row (starting from 4 , ending at 9)
@@ -214,7 +229,7 @@ public class ErailDataInput {
 						WebElement founddate=driver.findElement(By.xpath("//*[@id='divCalender']//td["+monthPos+"]/table/tbody/tr["+r+"]/td["+d+"]"));
 						
 						//matching with journey day and selecting
-						if(date.equals(founddate.getText())) {
+						if(date.equals(founddate.getText()) && !bugSkip (monthPos,r,d)) {
 							founddate.click();
 							datestatus=true;
 							break outerloop;
