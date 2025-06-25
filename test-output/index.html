@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,26 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">16 methods, 2 failed,   14 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.selenium.test.testCases.TestMain" class="method navigator-link" hash-for-method="testDateSelection">testDateSelection</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.selenium.test.testCases.TestMain" class="method navigator-link" hash-for-method="testDateSelection">testDateSelection</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">16 methods,   16 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -148,6 +129,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.selenium.test.testCases.TestMain" class="method navigator-link" hash-for-method="selectChoices">selectChoices</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.test.testCases.TestMain" class="method navigator-link" hash-for-method="testDateSelection">testDateSelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.test.testCases.TestMain" class="method navigator-link" hash-for-method="testDateSelection">testDateSelection</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -202,38 +193,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.selenium.test.testCases.TestMain</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testDateSelection">
-                  </a> <!-- testDateSelection -->
-                  <span class="method-name">testDateSelection</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [05-Oct-25 Sun] but found [TEXT(TODAY()+SearchData!C2, &quot;dd-mmm-yy ddd&quot;)]
-	at com.selenium.test.testCases.TestMain.testDateSelection(TestMain.java:255)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testDateSelection">
-                  </a> <!-- testDateSelection -->
-                  <span class="method-name">testDateSelection</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [05-Oct-25 Sun] but found [TEXT(TODAY()+SearchData!C2, &quot;dd-mmm-yy ddd&quot;)]
-	at com.selenium.test.testCases.TestMain.testDateSelection(TestMain.java:255)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -280,6 +239,20 @@
                   <a name="selectChoices">
                   </a> <!-- selectChoices -->
                   <span class="method-name">selectChoices</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDateSelection">
+                  </a> <!-- testDateSelection -->
+                  <span class="method-name">testDateSelection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDateSelection">
+                  </a> <!-- testDateSelection -->
+                  <span class="method-name">testDateSelection</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -404,74 +377,74 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(16);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testSrcStation')
+data.setCell(0, 1, 'availableTrain')
 data.setCell(0, 2, 'com.selenium.test.testCases.TestMain')
-data.setCell(0, 3, 1334);
+data.setCell(0, 3, 3312);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testDateSelection')
+data.setCell(1, 1, 'selectChoices')
 data.setCell(1, 2, 'com.selenium.test.testCases.TestMain')
-data.setCell(1, 3, 1232);
+data.setCell(1, 3, 1233);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testDateSelection')
 data.setCell(2, 2, 'com.selenium.test.testCases.TestMain')
-data.setCell(2, 3, 1178);
+data.setCell(2, 3, 1140);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'selectChoices')
 data.setCell(3, 2, 'com.selenium.test.testCases.TestMain')
-data.setCell(3, 3, 996);
+data.setCell(3, 3, 860);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'selectChoices')
+data.setCell(4, 1, 'testDateSelection')
 data.setCell(4, 2, 'com.selenium.test.testCases.TestMain')
-data.setCell(4, 3, 982);
+data.setCell(4, 3, 857);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testDestStation')
+data.setCell(5, 1, 'testSrcStation')
 data.setCell(5, 2, 'com.selenium.test.testCases.TestMain')
-data.setCell(5, 3, 937);
+data.setCell(5, 3, 840);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testSrcStation')
+data.setCell(6, 1, 'testDestStation')
 data.setCell(6, 2, 'com.selenium.test.testCases.TestMain')
-data.setCell(6, 3, 723);
+data.setCell(6, 3, 726);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'availableTrain')
+data.setCell(7, 1, 'testSrcStation')
 data.setCell(7, 2, 'com.selenium.test.testCases.TestMain')
-data.setCell(7, 3, 720);
+data.setCell(7, 3, 682);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'availableTrain')
+data.setCell(8, 1, 'testDestStation')
 data.setCell(8, 2, 'com.selenium.test.testCases.TestMain')
-data.setCell(8, 3, 692);
+data.setCell(8, 3, 626);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testTitle')
+data.setCell(9, 1, 'availableTrain')
 data.setCell(9, 2, 'com.selenium.test.testCases.TestMain')
-data.setCell(9, 3, 589);
+data.setCell(9, 3, 368);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testDestStation')
+data.setCell(10, 1, 'testTitle')
 data.setCell(10, 2, 'com.selenium.test.testCases.TestMain')
-data.setCell(10, 3, 548);
+data.setCell(10, 3, 299);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'testURL')
+data.setCell(11, 1, 'testTitle')
 data.setCell(11, 2, 'com.selenium.test.testCases.TestMain')
-data.setCell(11, 3, 256);
+data.setCell(11, 3, 143);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'testURL')
 data.setCell(12, 2, 'com.selenium.test.testCases.TestMain')
-data.setCell(12, 3, 152);
+data.setCell(12, 3, 124);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'testTitle')
+data.setCell(13, 1, 'testURL')
 data.setCell(13, 2, 'com.selenium.test.testCases.TestMain')
-data.setCell(13, 3, 97);
+data.setCell(13, 3, 74);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'alertHandle')
 data.setCell(14, 2, 'com.selenium.test.testCases.TestMain')
-data.setCell(14, 3, 58);
+data.setCell(14, 3, 30);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'alertHandle')
 data.setCell(15, 2, 'com.selenium.test.testCases.TestMain')
-data.setCell(15, 3, 8);
+data.setCell(15, 3, 22);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -504,171 +477,167 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">startReporter</span>
-                <span class="method-start">7167 ms</span>
+                <span class="method-start">12113 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setParams</span>
-                <span class="method-start">7617 ms</span>
+                <span class="method-start">12338 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">alertHandle</span>
-                <span class="method-start">9253 ms</span>
+                <span class="method-start">13498 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=alertHandle status=SUCCESS method=TestMain.alertHandle()[pri:0, instance:com.seleni...)</span>
-                <span class="method-start">9315 ms</span>
+                <span class="method-start">13531 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testTitle</span>
-                <span class="method-start">9350 ms</span>
+                <span class="method-start">13540 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=testTitle status=SUCCESS method=TestMain.testTitle()[pri:0, instance:com.selenium.t...)</span>
-                <span class="method-start">9942 ms</span>
+                <span class="method-start">13843 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testURL</span>
-                <span class="method-start">9945 ms</span>
+                <span class="method-start">13845 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=testURL status=SUCCESS method=TestMain.testURL()[pri:0, instance:com.selenium.test....)</span>
-                <span class="method-start">10211 ms</span>
+                <span class="method-start">13972 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testSrcStation</span>
-                <span class="method-start">10217 ms</span>
+                <span class="method-start">13975 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=testSrcStation status=SUCCESS method=TestMain.testSrcStation()[pri:1, instance:com....)</span>
-                <span class="method-start">11553 ms</span>
+                <span class="method-start">14821 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testDestStation</span>
-                <span class="method-start">11558 ms</span>
+                <span class="method-start">14823 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=testDestStation status=SUCCESS method=TestMain.testDestStation()[pri:2, instance:co...)</span>
-                <span class="method-start">12498 ms</span>
+                <span class="method-start">15451 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testDateSelection</span>
-                <span class="method-start">12499 ms</span>
+                <span class="method-start">15456 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=testDateSelection status=FAILURE method=TestMain.testDateSelection()[pri:3, instanc...)</span>
-                <span class="method-start">13681 ms</span>
+                <span class="method-name">getResult([TestResult name=testDateSelection status=SUCCESS method=TestMain.testDateSelection()[pri:3, instanc...)</span>
+                <span class="method-start">16599 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">selectChoices</span>
-                <span class="method-start">13901 ms</span>
+                <span class="method-start">16600 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=selectChoices status=SUCCESS method=TestMain.selectChoices()[pri:4, instance:com.se...)</span>
-                <span class="method-start">14885 ms</span>
+                <span class="method-start">17461 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">availableTrain</span>
-                <span class="method-start">14888 ms</span>
+                <span class="method-start">17462 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=availableTrain status=SUCCESS method=TestMain.availableTrain()[pri:5, instance:com....)</span>
-                <span class="method-start">15581 ms</span>
+                <span class="method-start">20776 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeParams</span>
-                <span class="method-start">15582 ms</span>
+                <span class="method-start">20777 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">flushReport</span>
-                <span class="method-start">20072 ms</span>
+                <span class="method-start">23914 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test before">
                 <span class="method-name">setDriver(chrome)</span>
-                <span class="method-start">20474 ms</span>
+                <span class="method-start">24192 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">startReporter</span>
-                <span class="method-start">27683 ms</span>
+                <span class="method-start">33511 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setParams</span>
-                <span class="method-start">27686 ms</span>
+                <span class="method-start">33514 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">alertHandle</span>
-                <span class="method-start">27834 ms</span>
+                <span class="method-start">33656 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=alertHandle status=SUCCESS method=TestMain.alertHandle()[pri:0, instance:com.seleni...)</span>
-                <span class="method-start">27845 ms</span>
+                <span class="method-start">33689 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testTitle</span>
-                <span class="method-start">27847 ms</span>
+                <span class="method-start">33692 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=testTitle status=SUCCESS method=TestMain.testTitle()[pri:0, instance:com.selenium.t...)</span>
-                <span class="method-start">27947 ms</span>
+                <span class="method-start">33838 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testURL</span>
-                <span class="method-start">27949 ms</span>
+                <span class="method-start">33840 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=testURL status=SUCCESS method=TestMain.testURL()[pri:0, instance:com.selenium.test....)</span>
-                <span class="method-start">28107 ms</span>
+                <span class="method-start">33915 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testSrcStation</span>
-                <span class="method-start">28109 ms</span>
+                <span class="method-start">33916 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=testSrcStation status=SUCCESS method=TestMain.testSrcStation()[pri:1, instance:com....)</span>
-                <span class="method-start">28833 ms</span>
+                <span class="method-start">34602 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testDestStation</span>
-                <span class="method-start">28834 ms</span>
+                <span class="method-start">34604 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=testDestStation status=SUCCESS method=TestMain.testDestStation()[pri:2, instance:co...)</span>
-                <span class="method-start">29384 ms</span>
+                <span class="method-start">35331 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testDateSelection</span>
-                <span class="method-start">29385 ms</span>
+                <span class="method-start">35333 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=testDateSelection status=FAILURE method=TestMain.testDateSelection()[pri:3, instanc...)</span>
-                <span class="method-start">30625 ms</span>
+                <span class="method-name">getResult([TestResult name=testDateSelection status=SUCCESS method=TestMain.testDateSelection()[pri:3, instanc...)</span>
+                <span class="method-start">36191 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">selectChoices</span>
-                <span class="method-start">30906 ms</span>
+                <span class="method-start">36192 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=selectChoices status=SUCCESS method=TestMain.selectChoices()[pri:4, instance:com.se...)</span>
-                <span class="method-start">31905 ms</span>
+                <span class="method-start">37427 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">availableTrain</span>
-                <span class="method-start">31907 ms</span>
+                <span class="method-start">37430 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=availableTrain status=SUCCESS method=TestMain.availableTrain()[pri:5, instance:com....)</span>
-                <span class="method-start">32630 ms</span>
+                <span class="method-start">37799 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeParams</span>
-                <span class="method-start">32632 ms</span>
+                <span class="method-start">37802 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">flushReport</span>
-                <span class="method-start">35496 ms</span>
+                <span class="method-start">39719 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
